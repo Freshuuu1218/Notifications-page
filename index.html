@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+  <main>
+
+      
+      <div class="heading">
+        <div class="notifications">
+          <h1>Notifications</h1>
+          <div id="count">3</div>
+        </div>
+        <div class="mark">
+          <p>Mark all as read</p>
+        </div>
+      </div>
+
+      <div class="content">
+
+        <div class="notification">
+          <div class="image"><img src="./assets/images/avatar-mark-webber.webp" alt="avatar"></div>
+          <div class="notification-content">
+            <div class="text"><span>Mark Webber</span> reacted to your recent post <strong>My first tournament today!</strong> <span class="not-read"></span></div>
+            <div class="publication"><p>1m ago</p></div>
+          </div>
+        </div>
+
+        <div class="notification">
+          <div class="image"><img src="./assets/images/avatar-angela-gray.webp" alt="avatar"></div>
+          <div class="notification-content">
+            <div class="text"><span>Angela Gray</span> followed you <span class="not-read"></span></div>
+            <div class="publication"><p>5m ago</p></div>
+          </div>
+        </div>
+
+        <div class="notification">
+          <div class="image"><img src="./assets/images/avatar-jacob-thompson.webp" alt="avatar"></div>
+          <div class="notification-content">
+            <div class="text"><span>Jacob Thompson</span> has joined your group  <a href="#">Chess Club</a> <span class="not-read"></span></div>
+            <div class="publication"><p>1 day ago</p></div>
+          </div>
+        </div>
+
+        <div class="notification notification-pm">
+          <div class="image"><img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="avatar"></div>
+          <div class="notification-content">
+            <div class="text"><span>Rizky Hasanuddin</span> sent you a private message</div>
+            <div class="publication"><p>5 days ago</p></div>
+            <div class="pm"> Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.</div>
+            </div>
+        </div>
+
+        <div class="notification">
+          <div class="image"><img src="./assets/images/avatar-kimberly-smith.webp" alt="avatar"></div>
+          <div class="notification-content">
+            <div class="text"><span>Kimberly Smith</span> commented on your picture</div>
+            <div class="publication"><p>1 week ago</p></div>
+          </div>
+          <div class="preview"><img src="./assets/images/image-chess.webp" alt="commented picture"></div>
+        </div>
+
+        <div class="notification">
+          <div class="image"><img src="./assets/images/avatar-nathan-peterson.webp" alt="avatar"></div>
+          <div class="notification-content">
+            <div class="text"><span>Nathan Peterson</span> reacted to your recent post <strong>5 end-game strategies to increase your win rate</strong></div>
+            <div class="publication"><p>2 weeks ago</p></div>
+          </div>
+        </div>
+
+        <div class="notification">
+          <div class="image"><img src="./assets/images/avatar-anna-kim.webp" alt="avatar"></div>
+          <div class="notification-content">
+            <div class="text"><span>Anna Kim</span> left the group <a href="#">Chess Club</a></div>
+            <div class="publication"><p>2 weeks ago</p></div>
+          </div>
+        </div>
+
+      </div>
+
+  </main>
+<script src="script.js"></script>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

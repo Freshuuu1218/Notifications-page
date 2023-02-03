@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(210, 60%, 98%);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+main{
+    box-shadow: 15px 10px 50px rgba(0,0,0,0.15);
+    border-radius: 1em;
+    padding: 2em 1.5em 1.5em;
+    width: 55vw;
+    margin: 5em;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading h1{
+    font-size: 1.75em;
+}
+.heading #count{
+    color: white;
+    background-color: hsl(219, 85%, 26%);
+    font-size: 1.1em;
+    font-weight: 800;
+    padding: .15em .65em;
+    border-radius: .3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+}
+.heading .mark{
+    color: hsl(219, 12%, 42%);
+    font-size: 1.1em;
+}
+.heading .mark:hover,
+.notification .notification-content .text strong:hover,
+.notification .notification-content .text span:hover{
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+.notifications{
+    display: flex;
+    align-items: center;
+}
+.content .notification{
+    height: 100%;
+    display: flex;
+    align-items:center;
+    background-color: hsl(210, 60%, 98%);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: .5em;
+    margin-top: 1em;
+    padding: 1em;
+}
+.notification .image{
+    width: 10%;
+}
+.notification .image img{
+    width: 75%;
+}
+.notification .notification-content{
+    width: 90%;
+    height: 100%;
+}
+.notification .notification-content .text{
+    color: hsl(219, 12%, 42%);
+    font-size: 1.1em;
+}
+.notification .notification-content .text span{
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+}
+
+.notification .notification-content .text .not-read{
+    background-color: hsl(1, 90%, 64%);
+    height: .5em;
+    width: .5em;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: .5em;
+}
+.notification .notification-content .text a{
+    text-decoration: none;
+    font-weight: 800;
+    color: hsl(219, 85%, 26%);
+}
+.notification .notification-content .text a:hover{
+    cursor: pointer;
+}
+.notification .notification-content .publication p{
+    color: hsl(219, 14%, 63%);
+    margin-top: .25em;
+    font-size: 1.2em;
+}
+.notification-pm img{
+    margin-bottom: 155%;
+}
+.notification .pm{
+    border-radius: .3em;
+    margin-top: .5em;
+    padding: 1em;
+    box-shadow: 0 -1px 1px rgba(0,0,0,0.2),
+                0 1px 1px rgba(0, 0, 0, 0.2),
+                1px 0 1px rgba(0, 0, 0, 0.2),
+                -1px 0 1px rgba(0, 0, 0, 0.2);
+    color: hsl(219, 12%, 42%);
+    font-size: 1.15em;
+}
+.notification .pm:hover{
+    cursor: pointer;
+    background-color: hsl(205, 33%, 90%);
+}
+.notification .preview img{
+    width: 60%;
+}
+.notification .preview img:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 430px){
+    main{
+        margin: 0;
+        width: 100vw;
+    }
+    .heading h1{
+        font-size: 1.25em;
+    }
+    .heading #count{
+        font-size: .9em;
+        margin-left: .4em;
+    }
+    .heading .mark{
+        font-size: .9em;
+    }
+.notification .image {
+    width: 20%;
+}
+
+.notification .image img {
+    width: 75%;
+}
+.notification .notification-content .text{
+    font-size: .85em;
+}
+.notification .notification-content .publication p {
+    margin-top: .125em;
+    font-size: .85em;
+}
+.notification .pm {
+    padding: 1em;
+    font-size: .85em;
+}
+.content .notification{
+    align-items: flex-start;
+}
+.notification .preview{
+    display: flex;
+    justify-content: flex-end;
+}
+}
